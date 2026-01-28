@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>FitRival Support</title>
+    <title>FitRival — Support, Privacy & Terms</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index,follow" />
 
     <style>
       :root {
@@ -12,6 +13,7 @@
         --accent: #ff5c5c;
         --text: #ffffff;
         --muted: #b3b3b3;
+        --border: rgba(255,255,255,0.08);
       }
 
       * {
@@ -24,72 +26,368 @@
         margin: 0;
         background: var(--bg);
         color: var(--text);
+      }
+
+      .wrap {
         min-height: 100vh;
         display: flex;
-        align-items: center;
         justify-content: center;
+        padding: 48px 16px;
       }
 
       .card {
         background: var(--card);
-        padding: 32px;
+        padding: 28px;
         border-radius: 16px;
-        max-width: 420px;
+        max-width: 860px;
         width: 100%;
-        text-align: center;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        border: 1px solid var(--border);
+      }
+
+      header {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 18px;
       }
 
       h1 {
-        margin: 0 0 12px;
+        margin: 0;
         font-size: 24px;
         letter-spacing: 0.5px;
       }
 
       p {
-        margin: 0 0 24px;
+        margin: 0;
         color: var(--muted);
         font-size: 15px;
-        line-height: 1.6;
+        line-height: 1.7;
       }
 
-      a {
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 18px;
+        margin-bottom: 22px;
+      }
+
+      a.btn {
         display: inline-block;
-        padding: 12px 20px;
+        padding: 12px 16px;
         border-radius: 10px;
         background: var(--accent);
         color: #fff;
         text-decoration: none;
-        font-weight: 600;
+        font-weight: 700;
         transition: transform 0.15s ease, opacity 0.15s ease;
       }
 
-      a:hover {
-        transform: translateY(-1px);
-        opacity: 0.9;
+      a.btn:hover { transform: translateY(-1px); opacity: 0.92; }
+
+      a.link {
+        color: #fff;
+        text-decoration: underline;
+        text-underline-offset: 3px;
       }
 
+      nav {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+
+      nav a {
+        color: var(--muted);
+        text-decoration: none;
+        padding: 8px 10px;
+        border-radius: 10px;
+        border: 1px solid var(--border);
+      }
+
+      nav a:hover { color: #fff; }
+
+      hr {
+        border: 0;
+        border-top: 1px solid var(--border);
+        margin: 22px 0;
+      }
+
+      h2 {
+        margin: 0 0 10px;
+        font-size: 18px;
+      }
+
+      h3 {
+        margin: 18px 0 6px;
+        font-size: 15px;
+        color: #fff;
+      }
+
+      .doc p { margin: 0 0 10px; }
+      .doc ul { margin: 8px 0 10px 18px; color: var(--muted); }
+      .doc li { margin: 6px 0; line-height: 1.6; }
+
+      .muted { color: var(--muted); }
+
       footer {
-        margin-top: 20px;
+        margin-top: 22px;
         font-size: 12px;
         color: #777;
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .pill {
+        display: inline-block;
+        border: 1px solid var(--border);
+        color: var(--muted);
+        padding: 6px 10px;
+        border-radius: 999px;
+        font-size: 12px;
       }
     </style>
   </head>
 
   <body>
-    <div class="card">
-      <h1>FitRival Support</h1>
-      <p>
-        Need help or have a question about FitRival?  
-        Reach out and we’ll get back to you.
-      </p>
+    <div class="wrap">
+      <main class="card">
+        <header>
+          <h1>FitRival Support</h1>
+          <p>
+            Need help or have a question about FitRival? Email us and we’ll get back to you.
+          </p>
 
-      <a href="mailto:support@fitrival.com">support@fitrival.com</a>
+          <div class="actions">
+            <a class="btn" href="mailto:support@fitrival.com">support@fitrival.com</a>
+            <a class="btn" href="#privacy">Privacy Policy</a>
+            <a class="btn" href="#terms">Terms of Service</a>
+          </div>
 
-      <footer>
-        © 2026 FitRival
-      </footer>
+          <nav>
+            <a href="#support">Support</a>
+            <a href="#privacy">Privacy</a>
+            <a href="#terms">Terms</a>
+          </nav>
+        </header>
+
+        <hr />
+
+        <!-- SUPPORT -->
+        <section id="support" class="doc">
+          <h2>Support</h2>
+          <p>
+            For support requests, billing questions (if applicable), and account issues, contact:
+            <a class="link" href="mailto:support@fitrival.com">support@fitrival.com</a>
+          </p>
+          <p class="muted">
+            Typical response time: 1–3 business days.
+          </p>
+        </section>
+
+        <hr />
+
+        <!-- PRIVACY POLICY -->
+        <section id="privacy" class="doc">
+          <h2>Privacy Policy</h2>
+          <p class="muted"><span class="pill">Last updated: January 2025</span></p>
+
+          <h3>Data Controller</h3>
+          <p>
+            FitRival is operated from Denmark. We are the data controller responsible for your personal data.
+            If you have questions about this policy, contact
+            <a class="link" href="mailto:fitrival@hotmail.com">fitrival@hotmail.com</a>.
+          </p>
+
+          <h3>Information We Collect</h3>
+          <p>We may collect the following data:</p>
+          <ul>
+            <li>Account information: email address and name.</li>
+            <li>Profile data: avatar, workout preferences, goals.</li>
+            <li>Workout data: exercise logs, duration, type, notes.</li>
+            <li>Social data: friend connections and activity interactions.</li>
+            <li>Device and app info: device type, OS, app version.</li>
+            <li>Usage and diagnostics: app interactions and crash data to improve reliability.</li>
+          </ul>
+
+          <h3>Legal Basis for Processing (GDPR)</h3>
+          <ul>
+            <li>Contract: to provide the FitRival service.</li>
+            <li>Consent: for optional features like push notifications (where applicable).</li>
+            <li>Legitimate interests: to improve the app and prevent fraud/abuse.</li>
+          </ul>
+
+          <h3>How We Use Your Information</h3>
+          <ul>
+            <li>Provide and maintain FitRival.</li>
+            <li>Track workouts and calculate streaks.</li>
+            <li>Enable social features (friends, leaderboards) based on your privacy settings.</li>
+            <li>Send notifications about progress (if enabled).</li>
+            <li>Improve performance and security.</li>
+          </ul>
+
+          <h3>Data Sharing</h3>
+          <p>We do not sell your personal data. We may share data:</p>
+          <ul>
+            <li>With other users: your profile and stats as controlled by your privacy settings.</li>
+            <li>With service providers: Supabase (database/authentication hosting) to operate the app.</li>
+            <li>When required by law.</li>
+          </ul>
+
+          <h3>Data Storage & Security</h3>
+          <p>
+            Your data is stored with our service providers. We use security measures such as:
+          </p>
+          <ul>
+            <li>Encryption in transit (TLS/HTTPS).</li>
+            <li>Secure password hashing (passwords are not stored in plain text).</li>
+            <li>Access controls and database row-level security where applicable.</li>
+          </ul>
+
+          <h3>Your Rights Under GDPR</h3>
+          <p>You have the right to:</p>
+          <ul>
+            <li>Access, rectification, erasure, portability, and objection.</li>
+            <li>Withdraw consent for optional features at any time.</li>
+          </ul>
+          <p>
+            To exercise these rights, contact
+            <a class="link" href="mailto:fitrival@hotmail.com">fitrival@hotmail.com</a>.
+            We aim to respond within 30 days.
+          </p>
+
+          <h3>Data Retention</h3>
+          <p>
+            We retain your data as long as your account is active. If you delete your account, we delete your data
+            unless retention is required by law.
+          </p>
+
+          <h3>Children’s Privacy</h3>
+          <p>
+            FitRival is not intended for children under 16 years of age. We do not knowingly collect data from children under 16.
+          </p>
+
+          <h3>Supervisory Authority</h3>
+          <p>
+            You can lodge a complaint with the Danish Data Protection Agency (Datatilsynet):
+            <br />Carl Jacobsens Vej 35, 2500 Valby, Denmark
+            <br /><a class="link" href="mailto:dt@datatilsynet.dk">dt@datatilsynet.dk</a>
+          </p>
+
+          <h3>Contact</h3>
+          <p>
+            Email:
+            <a class="link" href="mailto:fitrival@hotmail.com">fitrival@hotmail.com</a>
+          </p>
+        </section>
+
+        <hr />
+
+        <!-- TERMS -->
+        <section id="terms" class="doc">
+          <h2>Terms of Service</h2>
+          <p class="muted"><span class="pill">Effective: January 2025</span></p>
+
+          <h3>1. Introduction</h3>
+          <p>
+            These Terms govern your use of the FitRival mobile application. By using FitRival, you agree to these Terms.
+            If you do not agree, do not use the app.
+          </p>
+
+          <h3>2. Service Description</h3>
+          <p>FitRival lets you:</p>
+          <ul>
+            <li>Log and track workouts.</li>
+            <li>Maintain workout streaks.</li>
+            <li>Connect with friends and compete on leaderboards.</li>
+            <li>Earn virtual rewards (XP, levels, badges).</li>
+            <li>Participate in fitness challenges.</li>
+          </ul>
+
+          <h3>3. Account Registration</h3>
+          <ul>
+            <li>You must be at least 16 years old.</li>
+            <li>You must provide accurate registration info.</li>
+            <li>You are responsible for keeping your account secure.</li>
+          </ul>
+
+          <h3>4. Acceptable Use</h3>
+          <p>You may not:</p>
+          <ul>
+            <li>Harass, abuse, or threaten other users.</li>
+            <li>Post illegal or harmful content.</li>
+            <li>Manipulate leaderboards or exploit the system.</li>
+            <li>Impersonate others.</li>
+            <li>Use automated tools to access the app.</li>
+          </ul>
+
+          <h3>5. User Content</h3>
+          <p>
+            You own content you create. You grant FitRival permission to display it in the app for functionality.
+            We may remove content that violates these Terms.
+          </p>
+
+          <h3>6. Virtual Rewards</h3>
+          <ul>
+            <li>Virtual rewards have no monetary value.</li>
+            <li>They are not redeemable for cash.</li>
+            <li>We may change the rewards system.</li>
+          </ul>
+
+          <h3>7. Health & Fitness Disclaimer</h3>
+          <p>
+            FitRival is not medical advice. Consult a professional before starting an exercise program.
+            You use the app and exercise at your own risk.
+          </p>
+
+          <h3>8. Intellectual Property</h3>
+          <p>
+            FitRival’s app content (excluding user content) is protected by intellectual property laws.
+            You may not copy or reverse engineer the app without permission.
+          </p>
+
+          <h3>9. Third-Party Services</h3>
+          <p>
+            FitRival uses third-party services (e.g., Supabase for database/authentication). They may have their own policies.
+          </p>
+
+          <h3>10. Service Availability</h3>
+          <p>
+            We do not guarantee uninterrupted operation. We may modify or discontinue features.
+          </p>
+
+          <h3>11. Account Termination</h3>
+          <p>
+            You can delete your account in the app or by contacting us. We may suspend accounts that violate these Terms.
+          </p>
+
+          <h3>12. Limitation of Liability</h3>
+          <p>
+            FitRival is provided “as is”. To the maximum extent allowed by law, we are not liable for indirect damages.
+          </p>
+
+          <h3>13. Governing Law</h3>
+          <p>
+            These Terms are governed by Danish law. Disputes are handled in Danish courts in Copenhagen,
+            without limiting EU consumer rights.
+          </p>
+
+          <h3>14. Contact</h3>
+          <p>
+            Email:
+            <a class="link" href="mailto:fitrival@hotmail.com">fitrival@hotmail.com</a>
+          </p>
+        </section>
+
+        <footer>
+          <span>© 2026 FitRival</span>
+          <span class="muted">Support: support@fitrival.com</span>
+        </footer>
+      </main>
     </div>
   </body>
 </html>
