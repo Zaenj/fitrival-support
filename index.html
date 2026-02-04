@@ -1,393 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>FitRival — Support, Privacy & Terms</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="index,follow" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FitRival - Compete with friends, build streaks, and conquer fitness challenges together.">
+  <title>FitRival - Fitness Challenges with Friends</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-container">
+      <div class="logo">
+        <span class="logo-icon">💪</span>
+        <span class="logo-text">FitRival</span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="support.html" class="nav-link">Support</a>
+        <a href="terms.html" class="nav-link">Terms</a>
+        <a href="privacy.html" class="nav-link">Privacy</a>
+      </div>
+    </div>
+  </nav>
 
-    <style>
-      :root {
-        --bg: #0a0a0a;
-        --card: #141414;
-        --accent: #ff5c5c;
-        --text: #ffffff;
-        --muted: #b3b3b3;
-        --border: rgba(255,255,255,0.08);
-      }
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Compete with Friends,<br>Conquer Your Fitness Goals</h1>
+        <p class="hero-subtitle">Join challenges, track streaks, and stay motivated with FitRival</p>
 
-      * {
-        box-sizing: border-box;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-          Roboto, Inter, Helvetica, Arial, sans-serif;
-      }
+        <div class="download-buttons">
+          <a href="https://apps.apple.com/app/id6757563823" class="btn btn-primary">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            Download on App Store
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.vibecode.fitrival" class="btn btn-secondary">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+            </svg>
+            Get it on Google Play
+          </a>
+        </div>
 
-      body {
-        margin: 0;
-        background: var(--bg);
-        color: var(--text);
-      }
+        <div class="app-preview">
+          <div class="phone-mockup">
+            <div class="phone-screen">
+              <div class="mock-app">
+                <div class="mock-header">
+                  <div class="mock-stat">
+                    <div class="mock-icon">🔥</div>
+                    <div class="mock-value">7 Day Streak</div>
+                  </div>
+                </div>
+                <div class="mock-challenges">
+                  <div class="mock-challenge">
+                    <div class="mock-challenge-title">30-Day Workout Challenge</div>
+                    <div class="mock-progress-bar">
+                      <div class="mock-progress" style="width: 60%"></div>
+                    </div>
+                  </div>
+                  <div class="mock-challenge">
+                    <div class="mock-challenge-title">Weekly 5K Run</div>
+                    <div class="mock-progress-bar">
+                      <div class="mock-progress" style="width: 80%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      .wrap {
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        padding: 48px 16px;
-      }
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <h2 class="section-title">Everything You Need to Stay Motivated</h2>
 
-      .card {
-        background: var(--card);
-        padding: 28px;
-        border-radius: 16px;
-        max-width: 860px;
-        width: 100%;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-        border: 1px solid var(--border);
-      }
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🏆</div>
+          <h3 class="feature-title">Challenges</h3>
+          <p class="feature-description">Create custom challenges or join your friends. Compete on workouts, streaks, and more.</p>
+        </div>
 
-      header {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        margin-bottom: 18px;
-      }
+        <div class="feature-card">
+          <div class="feature-icon">🔥</div>
+          <h3 class="feature-title">Streaks</h3>
+          <p class="feature-description">Build consistency with daily workout streaks. Don't break the chain!</p>
+        </div>
 
-      h1 {
-        margin: 0;
-        font-size: 24px;
-        letter-spacing: 0.5px;
-      }
+        <div class="feature-card">
+          <div class="feature-icon">👥</div>
+          <h3 class="feature-title">Friends</h3>
+          <p class="feature-description">Connect with friends, share progress, and motivate each other to stay active.</p>
+        </div>
 
-      p {
-        margin: 0;
-        color: var(--muted);
-        font-size: 15px;
-        line-height: 1.7;
-      }
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3 class="feature-title">Leaderboard</h3>
+          <p class="feature-description">See how you rank among friends. Compete for the top spot!</p>
+        </div>
 
-      .actions {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 18px;
-        margin-bottom: 22px;
-      }
+        <div class="feature-card">
+          <div class="feature-icon">❤️</div>
+          <h3 class="feature-title">Health Sync</h3>
+          <p class="feature-description">Auto-sync workouts from Apple Health or Google Fit. No manual logging needed.</p>
+        </div>
 
-      a.btn {
-        display: inline-block;
-        padding: 12px 16px;
-        border-radius: 10px;
-        background: var(--accent);
-        color: #fff;
-        text-decoration: none;
-        font-weight: 700;
-        transition: transform 0.15s ease, opacity 0.15s ease;
-      }
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3 class="feature-title">Goals</h3>
+          <p class="feature-description">Set weekly workout goals and track your progress. Stay accountable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      a.btn:hover { transform: translateY(-1px); opacity: 0.92; }
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <h2 class="cta-title">Ready to Get Started?</h2>
+      <p class="cta-subtitle">Join thousands of users crushing their fitness goals together</p>
+      <div class="download-buttons">
+        <a href="https://apps.apple.com/app/id6757563823" class="btn btn-primary">Download for iOS</a>
+        <a href="https://play.google.com/store/apps/details?id=com.vibecode.fitrival" class="btn btn-secondary">Download for Android</a>
+      </div>
+    </div>
+  </section>
 
-      a.link {
-        color: #fff;
-        text-decoration: underline;
-        text-underline-offset: 3px;
-      }
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-icon">💪</span>
+            <span class="logo-text">FitRival</span>
+          </div>
+          <p class="footer-tagline">Compete. Motivate. Achieve.</p>
+        </div>
 
-      nav {
-        display: flex;
-        gap: 14px;
-        flex-wrap: wrap;
-        margin-top: 10px;
-      }
-
-      nav a {
-        color: var(--muted);
-        text-decoration: none;
-        padding: 8px 10px;
-        border-radius: 10px;
-        border: 1px solid var(--border);
-      }
-
-      nav a:hover { color: #fff; }
-
-      hr {
-        border: 0;
-        border-top: 1px solid var(--border);
-        margin: 22px 0;
-      }
-
-      h2 {
-        margin: 0 0 10px;
-        font-size: 18px;
-      }
-
-      h3 {
-        margin: 18px 0 6px;
-        font-size: 15px;
-        color: #fff;
-      }
-
-      .doc p { margin: 0 0 10px; }
-      .doc ul { margin: 8px 0 10px 18px; color: var(--muted); }
-      .doc li { margin: 6px 0; line-height: 1.6; }
-
-      .muted { color: var(--muted); }
-
-      footer {
-        margin-top: 22px;
-        font-size: 12px;
-        color: #777;
-        display: flex;
-        justify-content: space-between;
-        gap: 12px;
-        flex-wrap: wrap;
-      }
-
-      .pill {
-        display: inline-block;
-        border: 1px solid var(--border);
-        color: var(--muted);
-        padding: 6px 10px;
-        border-radius: 999px;
-        font-size: 12px;
-      }
-    </style>
-  </head>
-
-  <body>
-    <div class="wrap">
-      <main class="card">
-        <header>
-          <h1>FitRival Support</h1>
-          <p>
-            Need help or have a question about FitRival? Email us and we’ll get back to you.
-          </p>
-
-          <div class="actions">
-            <a class="btn" href="mailto:support@fitrival.com">support@fitrival.com</a>
-            <a class="btn" href="#privacy">Privacy Policy</a>
-            <a class="btn" href="#terms">Terms of Service</a>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4 class="footer-heading">Product</h4>
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="support.html" class="footer-link">Support</a>
           </div>
 
-          <nav>
-            <a href="#support">Support</a>
-            <a href="#privacy">Privacy</a>
-            <a href="#terms">Terms</a>
-          </nav>
-        </header>
+          <div class="footer-column">
+            <h4 class="footer-heading">Legal</h4>
+            <a href="terms.html" class="footer-link">Terms of Service</a>
+            <a href="privacy.html" class="footer-link">Privacy Policy</a>
+          </div>
 
-        <hr />
+          <div class="footer-column">
+            <h4 class="footer-heading">Download</h4>
+            <a href="https://apps.apple.com/app/id6757563823" class="footer-link">iOS App</a>
+            <a href="https://play.google.com/store/apps/details?id=com.vibecode.fitrival" class="footer-link">Android App</a>
+          </div>
+        </div>
+      </div>
 
-        <!-- SUPPORT -->
-        <section id="support" class="doc">
-          <h2>Support</h2>
-          <p>
-            For support requests, billing questions (if applicable), and account issues, contact:
-            <a class="link" href="mailto:support@fitrival.com">support@fitrival.com</a>
-          </p>
-          <p class="muted">
-            Typical response time: 1–3 business days.
-          </p>
-        </section>
-
-        <hr />
-
-        <!-- PRIVACY POLICY -->
-        <section id="privacy" class="doc">
-          <h2>Privacy Policy</h2>
-          <p class="muted"><span class="pill">Last updated: January 2025</span></p>
-
-          <h3>Data Controller</h3>
-          <p>
-            FitRival is operated from Denmark. We are the data controller responsible for your personal data.
-            If you have questions about this policy, contact
-            <a class="link" href="mailto:fitrival@hotmail.com">fitrival@hotmail.com</a>.
-          </p>
-
-          <h3>Information We Collect</h3>
-          <p>We may collect the following data:</p>
-          <ul>
-            <li>Account information: email address and name.</li>
-            <li>Profile data: avatar, workout preferences, goals.</li>
-            <li>Workout data: exercise logs, duration, type, notes.</li>
-            <li>Social data: friend connections and activity interactions.</li>
-            <li>Device and app info: device type, OS, app version.</li>
-            <li>Usage and diagnostics: app interactions and crash data to improve reliability.</li>
-          </ul>
-
-          <h3>Legal Basis for Processing (GDPR)</h3>
-          <ul>
-            <li>Contract: to provide the FitRival service.</li>
-            <li>Consent: for optional features like push notifications (where applicable).</li>
-            <li>Legitimate interests: to improve the app and prevent fraud/abuse.</li>
-          </ul>
-
-          <h3>How We Use Your Information</h3>
-          <ul>
-            <li>Provide and maintain FitRival.</li>
-            <li>Track workouts and calculate streaks.</li>
-            <li>Enable social features (friends, leaderboards) based on your privacy settings.</li>
-            <li>Send notifications about progress (if enabled).</li>
-            <li>Improve performance and security.</li>
-          </ul>
-
-          <h3>Data Sharing</h3>
-          <p>We do not sell your personal data. We may share data:</p>
-          <ul>
-            <li>With other users: your profile and stats as controlled by your privacy settings.</li>
-            <li>With service providers: Supabase (database/authentication hosting) to operate the app.</li>
-            <li>When required by law.</li>
-          </ul>
-
-          <h3>Data Storage & Security</h3>
-          <p>
-            Your data is stored with our service providers. We use security measures such as:
-          </p>
-          <ul>
-            <li>Encryption in transit (TLS/HTTPS).</li>
-            <li>Secure password hashing (passwords are not stored in plain text).</li>
-            <li>Access controls and database row-level security where applicable.</li>
-          </ul>
-
-          <h3>Your Rights Under GDPR</h3>
-          <p>You have the right to:</p>
-          <ul>
-            <li>Access, rectification, erasure, portability, and objection.</li>
-            <li>Withdraw consent for optional features at any time.</li>
-          </ul>
-          <p>
-            To exercise these rights, contact
-            <a class="link" href="mailto:fitrival@hotmail.com">fitrival@hotmail.com</a>.
-            We aim to respond within 30 days.
-          </p>
-
-          <h3>Data Retention</h3>
-          <p>
-            We retain your data as long as your account is active. If you delete your account, we delete your data
-            unless retention is required by law.
-          </p>
-
-          <h3>Children’s Privacy</h3>
-          <p>
-            FitRival is not intended for children under 16 years of age. We do not knowingly collect data from children under 16.
-          </p>
-
-          <h3>Supervisory Authority</h3>
-          <p>
-            You can lodge a complaint with the Danish Data Protection Agency (Datatilsynet):
-            <br />Carl Jacobsens Vej 35, 2500 Valby, Denmark
-            <br /><a class="link" href="mailto:dt@datatilsynet.dk">dt@datatilsynet.dk</a>
-          </p>
-
-          <h3>Contact</h3>
-          <p>
-            Email:
-            <a class="link" href="mailto:fitrival@hotmail.com">fitrival@hotmail.com</a>
-          </p>
-        </section>
-
-        <hr />
-
-        <!-- TERMS -->
-        <section id="terms" class="doc">
-          <h2>Terms of Service</h2>
-          <p class="muted"><span class="pill">Effective: January 2025</span></p>
-
-          <h3>1. Introduction</h3>
-          <p>
-            These Terms govern your use of the FitRival mobile application. By using FitRival, you agree to these Terms.
-            If you do not agree, do not use the app.
-          </p>
-
-          <h3>2. Service Description</h3>
-          <p>FitRival lets you:</p>
-          <ul>
-            <li>Log and track workouts.</li>
-            <li>Maintain workout streaks.</li>
-            <li>Connect with friends and compete on leaderboards.</li>
-            <li>Earn virtual rewards (XP, levels, badges).</li>
-            <li>Participate in fitness challenges.</li>
-          </ul>
-
-          <h3>3. Account Registration</h3>
-          <ul>
-            <li>You must be at least 16 years old.</li>
-            <li>You must provide accurate registration info.</li>
-            <li>You are responsible for keeping your account secure.</li>
-          </ul>
-
-          <h3>4. Acceptable Use</h3>
-          <p>You may not:</p>
-          <ul>
-            <li>Harass, abuse, or threaten other users.</li>
-            <li>Post illegal or harmful content.</li>
-            <li>Manipulate leaderboards or exploit the system.</li>
-            <li>Impersonate others.</li>
-            <li>Use automated tools to access the app.</li>
-          </ul>
-
-          <h3>5. User Content</h3>
-          <p>
-            You own content you create. You grant FitRival permission to display it in the app for functionality.
-            We may remove content that violates these Terms.
-          </p>
-
-          <h3>6. Virtual Rewards</h3>
-          <ul>
-            <li>Virtual rewards have no monetary value.</li>
-            <li>They are not redeemable for cash.</li>
-            <li>We may change the rewards system.</li>
-          </ul>
-
-          <h3>7. Health & Fitness Disclaimer</h3>
-          <p>
-            FitRival is not medical advice. Consult a professional before starting an exercise program.
-            You use the app and exercise at your own risk.
-          </p>
-
-          <h3>8. Intellectual Property</h3>
-          <p>
-            FitRival’s app content (excluding user content) is protected by intellectual property laws.
-            You may not copy or reverse engineer the app without permission.
-          </p>
-
-          <h3>9. Third-Party Services</h3>
-          <p>
-            FitRival uses third-party services (e.g., Supabase for database/authentication). They may have their own policies.
-          </p>
-
-          <h3>10. Service Availability</h3>
-          <p>
-            We do not guarantee uninterrupted operation. We may modify or discontinue features.
-          </p>
-
-          <h3>11. Account Termination</h3>
-          <p>
-            You can delete your account in the app or by contacting us. We may suspend accounts that violate these Terms.
-          </p>
-
-          <h3>12. Limitation of Liability</h3>
-          <p>
-            FitRival is provided “as is”. To the maximum extent allowed by law, we are not liable for indirect damages.
-          </p>
-
-          <h3>13. Governing Law</h3>
-          <p>
-            These Terms are governed by Danish law. Disputes are handled in Danish courts in Copenhagen,
-            without limiting EU consumer rights.
-          </p>
-
-          <h3>14. Contact</h3>
-          <p>
-            Email:
-            <a class="link" href="mailto:fitrival@hotmail.com">fitrival@hotmail.com</a>
-          </p>
-        </section>
-
-        <footer>
-          <span>© 2026 FitRival</span>
-          <span class="muted">Support: support@fitrival.com</span>
-        </footer>
-      </main>
+      <div class="footer-bottom">
+        <p>&copy; 2024 FitRival. All rights reserved.</p>
+      </div>
     </div>
-  </body>
+  </footer>
+</body>
 </html>
