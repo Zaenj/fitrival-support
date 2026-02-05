@@ -69,7 +69,7 @@ fitrival://challenge/abc123
 This means it works for **everyone**:
 - ✅ Users with the app → Opens in app
 - ✅ Users without app → Directed to download
-- ✅ Works on iOS, Android, and web browsers
+- ✅ Works on iOS devices and web browsers
 
 ## Troubleshooting
 

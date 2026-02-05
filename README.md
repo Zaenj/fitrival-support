@@ -50,7 +50,7 @@ https://zaenj.github.io/fitrival-support/challenge.html?c=abc123xyz
 This link:
 - ✅ **Has app**: Opens app → Shows challenge
 - ✅ **No app**: Shows download buttons → After install → Opens challenge
-- ✅ **Works on all platforms** (iOS, Android, Web)
+- ✅ **Works on iOS** devices and web browsers
 
 ## Testing
 
@@ -64,19 +64,13 @@ After deploying, test these URLs:
 
 ## Customization
 
-### Update Contact Email
+### Contact Email
 
-Search for `support@fitrival.app` and replace with your actual email address in:
-- support.html
-- terms.html
-- privacy.html
+Already configured with: **fitrival@hotmail.com**
 
-### Update App Store Links
+### App Store Links
 
 Already configured with your iOS App ID: **6757563823**
-
-If you publish to Google Play, the Android link is ready:
-- `com.vibecode.fitrival`
 
 ## Features
 
@@ -131,7 +125,7 @@ If you need help with the website, check:
 
 The website uses:
 - **Colors**: Teal (#14b8a6) matching your app
-- **Font**: System fonts (-apple-system for iOS, Roboto for Android)
+- **Font**: System fonts (-apple-system, BlinkMacSystemFont, Segoe UI, Roboto)
 - **Style**: Modern, clean, mobile-first design
 - **Responsive**: Works perfectly on all screen sizes
 
