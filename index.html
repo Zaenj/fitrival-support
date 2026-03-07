@@ -3,156 +3,140 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="FitRival - Compete with friends, build streaks, and conquer fitness challenges together.">
-  <title>FitRival - Fitness Challenges with Friends</title>
+  <meta name="description" content="FitRival — Compete with friends, build streaks, and conquer fitness challenges together.">
+  <title>FitRival — Compete. Conquer. Rise.</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <!-- Navigation -->
   <nav class="nav">
-    <div class="container nav-container">
-      <div class="logo">
-        <span class="logo-icon">💪</span>
-        <span class="logo-text">FitRival</span>
-      </div>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <div class="nav-logo-mark">F</div>
+        <span class="nav-brand-name">FITRIVAL</span>
+      </a>
       <div class="nav-links">
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="support.html" class="nav-link">Support</a>
         <a href="terms.html" class="nav-link">Terms</a>
         <a href="privacy.html" class="nav-link">Privacy</a>
+        <a href="#support" class="nav-link">Support</a>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <h1 class="hero-title">Compete with Friends,<br>Conquer Your Fitness Goals</h1>
-        <p class="hero-subtitle">Join challenges, track streaks, and stay motivated with FitRival</p>
+    <div class="hero-content">
+      <!-- Logo with CSS rings -->
+      <div class="logo-hero">
+        <div class="logo-ring logo-ring-outer"></div>
+        <div class="logo-ring logo-ring-inner"></div>
+        <div class="logo-mark-hero">F</div>
+      </div>
 
-        <div class="download-buttons">
-          <a href="https://apps.apple.com/app/id6757563823" class="btn btn-primary">
-            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+      <h1 class="hero-title">FITRIVAL</h1>
+      <div class="hero-underline"></div>
+      <p class="hero-tagline">Compete &nbsp;·&nbsp; Conquer &nbsp;·&nbsp; Rise</p>
+
+      <a href="https://apps.apple.com/app/id6757563823" class="btn btn-primary">
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+        </svg>
+        Download on App Store
+      </a>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Support Section -->
+  <div id="support">
+    <div class="section">
+      <div class="section-label">Support</div>
+      <h2 class="section-title">How Can We Help?</h2>
+      <p class="section-subtitle">Questions, feedback, or anything else — we're here for you.</p>
+
+      <div class="cards-grid">
+
+        <!-- Contact Card -->
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
             </svg>
-            Download on App Store
+          </div>
+          <div class="card-title">Contact Us</div>
+          <p class="card-desc">Have a question or found a bug? Send us an email and we'll get back to you as soon as possible.</p>
+          <a href="mailto:fitrival@hotmail.com" class="card-link">
+            fitrival@hotmail.com
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
           </a>
         </div>
 
-        <div class="app-preview">
-          <div class="phone-mockup">
-            <div class="phone-screen">
-              <div class="mock-app">
-                <div class="mock-header">
-                  <div class="mock-stat">
-                    <div class="mock-icon">🔥</div>
-                    <div class="mock-value">7 Day Streak</div>
-                  </div>
-                </div>
-                <div class="mock-challenges">
-                  <div class="mock-challenge">
-                    <div class="mock-challenge-title">30-Day Workout Challenge</div>
-                    <div class="mock-progress-bar">
-                      <div class="mock-progress" style="width: 60%"></div>
-                    </div>
-                  </div>
-                  <div class="mock-challenge">
-                    <div class="mock-challenge-title">Weekly 5K Run</div>
-                    <div class="mock-progress-bar">
-                      <div class="mock-progress" style="width: 80%"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <!-- Terms Card -->
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+              <polyline points="10 9 9 9 8 9"/>
+            </svg>
           </div>
+          <div class="card-title">Terms of Service</div>
+          <p class="card-desc">Review our terms of service — your rights and responsibilities when using FitRival.</p>
+          <a href="terms.html" class="card-link">
+            Read Terms
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
         </div>
+
+        <!-- Privacy Card -->
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <div class="card-title">Privacy Policy</div>
+          <p class="card-desc">Learn how we collect, use, and protect your data — including your health and fitness information.</p>
+          <a href="privacy.html" class="card-link">
+            Read Privacy Policy
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- Features Section -->
-  <section class="features">
-    <div class="container">
-      <h2 class="section-title">Simple. Social. Effective.</h2>
-
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon">🏆</div>
-          <h3 class="feature-title">Challenges</h3>
-          <p class="feature-description">Create challenges and compete with friends</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">🔥</div>
-          <h3 class="feature-title">Streaks</h3>
-          <p class="feature-description">Build daily workout habits</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">👥</div>
-          <h3 class="feature-title">Friends</h3>
-          <p class="feature-description">Stay motivated together</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">❤️</div>
-          <h3 class="feature-title">Health Sync</h3>
-          <p class="feature-description">Auto-sync from Apple Health</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="cta">
-    <div class="container">
-      <h2 class="cta-title">Start Competing Today</h2>
-      <p class="cta-subtitle">Available on iOS</p>
-      <div class="download-buttons">
-        <a href="https://apps.apple.com/app/id6757563823" class="btn btn-primary">Download Now</a>
-      </div>
-    </div>
-  </section>
+  <div class="divider"></div>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <div class="logo">
-            <span class="logo-icon">💪</span>
-            <span class="logo-text">FitRival</span>
-          </div>
-          <p class="footer-tagline">Compete. Motivate. Achieve.</p>
-        </div>
-
-        <div class="footer-links">
-          <div class="footer-column">
-            <h4 class="footer-heading">Links</h4>
-            <a href="index.html" class="footer-link">Home</a>
-            <a href="support.html" class="footer-link">Support</a>
-            <a href="terms.html" class="footer-link">Terms</a>
-            <a href="privacy.html" class="footer-link">Privacy</a>
-          </div>
-
-          <div class="footer-column">
-            <h4 class="footer-heading">Contact</h4>
-            <a href="mailto:fitrival@hotmail.com" class="footer-link">fitrival@hotmail.com</a>
-          </div>
-
-          <div class="footer-column">
-            <h4 class="footer-heading">Download</h4>
-            <a href="https://apps.apple.com/app/id6757563823" class="footer-link">iOS App</a>
-          </div>
-        </div>
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo-mark">F</div>
+        <span class="footer-name">FITRIVAL</span>
       </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2024 FitRival. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="terms.html">Terms of Service</a>
+        <span class="dot">·</span>
+        <a href="privacy.html">Privacy Policy</a>
+        <span class="dot">·</span>
+        <a href="mailto:fitrival@hotmail.com" class="footer-email">fitrival@hotmail.com</a>
       </div>
+      <p class="footer-copy">© 2025 FitRival. All rights reserved.</p>
     </div>
   </footer>
+
 </body>
 </html>
